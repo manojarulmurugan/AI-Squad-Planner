@@ -69,7 +69,7 @@ st.markdown('<p class="subtitle">Plan the perfect group getaway with AI-powered 
 
 # Sidebar for configuration
 with st.sidebar:
-    st.header("⚙️ Configuration")
+    st.header("⚙️ Trip Settings")
     num_travelers = st.number_input(
         "Number of Travelers",
         min_value=2,
@@ -87,14 +87,10 @@ with st.sidebar:
         help="How many different date options should each traveler provide?"
     )
     st.markdown("---")
-    st.markdown("**Requirements:**")
-    st.markdown("- `GOOGLE_API_KEY` environment variable")
-    st.markdown("- `SERPAPI_KEY` environment variable")
-    st.markdown("- `activities.csv` file in project directory")
-    
-    st.markdown("---")
-    st.markdown("**💡 Tip:**")
-    st.markdown("Fill out all traveler details and click 'Generate Itinerary' to create your perfect group trip!")
+    st.markdown("**How it works**")
+    st.markdown("1. Choose your group size and date flexibility.")
+    st.markdown("2. Fill in traveler details and preferences.")
+    st.markdown("3. Click **Generate Itinerary** to get a fair, AI-crafted trip plan.")
 
 
 def default_dates(offset_weeks: int) -> Dict[str, date]:

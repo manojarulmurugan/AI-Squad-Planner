@@ -1,5 +1,7 @@
 # AI Group Trip Planner
 
+**Live App:** https://ai-squad-planner-fzk9tarzmendo6eg9fynwj.streamlit.app/
+
 An AI-powered trip planning application that helps groups plan fair, budget-aware 2-day trips using Gemini AI and LangChain. The app analyzes group preferences, searches for flights and hotels, and generates personalized itineraries with budget fairness analysis.
 
 ## 🎯 Features
@@ -23,9 +25,11 @@ An AI-powered trip planning application that helps groups plan fair, budget-awar
 
 ### Step 1: Clone the Repository
 
+Clone this repository from GitHub and move into the project directory:
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/squad-planner.git
-cd squad-planner
+git clone https://github.com/<your-username>/AI-Squad-Planner.git
+cd AI-Squad-Planner
 ```
 
 ### Step 2: Install Dependencies
@@ -59,11 +63,11 @@ pip install -r requirements.txt
 3. Download the following files:
    - `yelp_academic_dataset_business.json`
    - `yelp_academic_dataset_review.json`
-4. Place both files in the project root directory (`SquadPlanner/`)
+4. Place both files in the project root directory (`AI-Squad-Planner/`)
 
 Your directory should look like:
 ```
-SquadPlanner/
+AI-Squad-Planner/
 ├── yelp_academic_dataset_business.json  ← Download this
 ├── yelp_academic_dataset_review.json    ← Download this
 ├── streamlit_app.py
@@ -118,15 +122,7 @@ SERPAPI_KEY=your_serpapi_key_here
 
 ### Step 6: Verify Setup
 
-Check that all required files exist:
-
-```bash
-# Check for required files
-ls -la activities.csv
-ls -la .env
-ls -la streamlit_app.py
-ls -la trip_planner.py
-```
+Check that all required files (such as `activities.csv`, `.env`, `streamlit_app.py`, and `trip_planner.py`) exist in the project root before running the app.
 
 ## 🏃 Running the Application
 
@@ -226,26 +222,25 @@ git push -u origin main
 
 ### Step 2: Deploy on Streamlit Cloud
 
+To deploy your own instance on Streamlit Community Cloud:
+
 1. Go to [share.streamlit.io](https://share.streamlit.io)
 2. Sign in with your GitHub account
 3. Click **"New app"**
-4. Configure:
-   - **Repository**: Select your repository
-   - **Branch**: `main`
-   - **Main file path**: `streamlit_app.py`
-5. Click **"Advanced settings"**
-6. Add secrets in the format:
+4. Select the repository and branch containing this project
+5. Set **Main file path** to `streamlit_app.py`
+6. In **Advanced settings → Secrets**, add your keys in TOML format:
 
 ```toml
-GOOGLE_API_KEY = "your_actual_google_api_key"
-SERPAPI_KEY = "your_actual_serpapi_key"
+GOOGLE_API_KEY = "<your-google-api-key>"
+SERPAPI_KEY = "<your-serpapi-key>"
 ```
 
 7. Click **"Deploy"**
 
 ### Step 3: Verify Deployment
 
-- Your app will be available at: `https://YOUR_APP_NAME.streamlit.app`
+- Your app will be available at a URL like `https://your-app-name.streamlit.app`
 - Check the logs if there are any errors
 - Make sure `activities.csv` is accessible (it should be in the repo)
 
