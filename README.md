@@ -1,5 +1,7 @@
 # AI Group Trip Planner
 
+*** Made for MadHacks November 2025 at the University of Wisconsin—Madison ***
+
 **Live App:** https://ai-squad-planner-fzk9tarzmendo6eg9fynwj.streamlit.app/
 
 An AI-powered trip planning application that helps groups plan fair, budget-aware 2-day trips using Gemini AI and LangChain. The app analyzes group preferences, searches for flights and hotels, and generates personalized itineraries with budget fairness analysis.
