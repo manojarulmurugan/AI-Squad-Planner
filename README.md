@@ -1,6 +1,6 @@
 # AI Group Trip Planner
 
-*** Made for MadHacks November 2025 at the University of Wisconsin—Madison ***
+***Made for MadHacks November 2025 at the University of Wisconsin—Madison***
 
 **Live App:** https://ai-squad-planner-fzk9tarzmendo6eg9fynwj.streamlit.app/
 
