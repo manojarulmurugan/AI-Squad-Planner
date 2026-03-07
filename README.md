@@ -1,4 +1,4 @@
-# AI Group Trip Planner
+# AI Group Trip Planner (MadHacks '26)
 
 ***Made for MadHacks November 2025 at the University of Wisconsin—Madison***
 
